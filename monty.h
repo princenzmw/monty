@@ -46,7 +46,6 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void push_queue(stack_t **stack, unsigned int param);
-unsigned int count_stack(stack_t *stack);
 extern stack_t *head;
 void handle_error(int errno, char *opcode, unsigned int line, char *buff);
 
