@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <ctype.h>
 
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -38,6 +39,8 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+extern stack_t *head;
+
 void push(stack_t **stack, unsigned int param);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
@@ -46,7 +49,6 @@ void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void push_queue(stack_t **stack, unsigned int param);
-extern stack_t *head;
 void (*pick_func(char *s))(stack_t **, unsigned int);
 void handle_error(int errno, char *opcode, unsigned int line, char *buff);
 void frees_stack(void);
@@ -54,5 +56,6 @@ void check_args_num(int argn);
 FILE *open_file(char *filename);
 int handle_execution(char *op_code, char *op_param, unsigned int line, int m);
 int check_push_param(char *param);
+unsigned int count_stack(stack_t *stack);
 
 #endif

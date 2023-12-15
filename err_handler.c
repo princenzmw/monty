@@ -1,5 +1,7 @@
 #include "monty.h"
 
+stack_t *head = NULL;
+
 /**
   * handle_cerror - Manages common interpreter errors
   * @errno: The error code to manage
