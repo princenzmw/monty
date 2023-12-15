@@ -47,6 +47,12 @@ void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void push_queue(stack_t **stack, unsigned int param);
 extern stack_t *head;
+void (*pick_func(char *s))(stack_t **, unsigned int);
 void handle_error(int errno, char *opcode, unsigned int line, char *buff);
+void frees_stack(void);
+void check_args_num(int argn);
+FILE *open_file(char *filename);
+int handle_execution(char *op_code, char *op_param, unsigned int line, int m);
+int check_push_param(char *param);
 
 #endif
