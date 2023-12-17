@@ -56,6 +56,14 @@ void check_args_num(int argn);
 FILE *open_file(char *filename);
 int handle_execution(char *op_code, char *op_param, unsigned int line, int m);
 int check_push_param(char *param);
+void sub(stack_t **stack, unsigned int line_number);
+void divide(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
+void pchar(stack_t **stack, unsigned int line_number);
+void pstr(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
 unsigned int count_stack(stack_t *stack);
 
 #endif
