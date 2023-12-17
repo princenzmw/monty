@@ -102,7 +102,6 @@ void handle_uerror(int errno, unsigned int line)
 void frees_stack(void)
 {
 	stack_t *temp = NULL;
-	stack_t *head = NULL;
 
 	if (head)
 	{

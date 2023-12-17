@@ -1,4 +1,5 @@
 #include "monty.h"
+stack_t *head = NULL;
 
 /**
   * check_args_num - Check the arguments passed on to the interpreter
@@ -61,7 +62,6 @@ FILE *open_file(char *filename)
   */
 int handle_execution(char *op_code, char *op_param, unsigned int line, int m)
 {
-	stack_t *head = NULL;
 	int status_op = 0;
 	void (*oprt)(stack_t **, unsigned int);
 

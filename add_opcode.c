@@ -1,7 +1,5 @@
 #include "monty.h"
 
-#include "monty.h"
-
 /**
   * count_stack - Counts the number of elements in the stack
   * @stack: The stack to count
